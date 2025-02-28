@@ -31,7 +31,7 @@ public class TestingApplication {
 		System.out.println("Перелёты с прилётом раньше вылета:");
 		validArrivalBeforeDepartureFlights.forEach(System.out::println);
 
-		// 3. Исключаем перелёты с временем на земле более 2 часов
+		// 3. Исключаем перелёты с временем на Земле более 2 часов
 		FlightFilter groundTimeFilter = new GroundTimeFilter(Duration.ofHours(2));
 		List<Flight> validGroundTimeFlights = groundTimeFilter.filter(flights);
 		System.out.println("Перелёты с временем на земле более 2 часов:");
